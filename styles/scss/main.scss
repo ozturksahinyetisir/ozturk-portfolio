@@ -1,0 +1,138 @@
+@import '../../node_modules/bootstrap/scss/bootstrap';
+$primary-color: #094236;
+
+body {
+    background-color: $primary-color;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Oswald, sans-serif; // Sans-serif ekleme sebebimiz Oswald fontunu çekemezsek default olarak sans kullanacaktır.
+}
+
+
+// Navbar styles
+.navbar {
+    background-color: #094236;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.navbar-toggler {
+    margin-right: 1rem;
+}
+
+.navbar-toggler-icon {
+    color: #94d1c0;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.collapse {
+    display: none;
+    &.show {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin-left: 1rem;
+    font-family: Oswald, sans-serif;
+    font-size: larger;
+}
+
+.nav-link {
+    color: white !important;
+    text-decoration: none;
+    &:hover {
+        color: #94d1c0 !important;
+    }
+}
+
+// Header
+.header {
+    background: rgba(17, 36, 27, 0.5);
+    padding: 2rem 0;
+    text-align: center;
+
+}
+
+//Resume
+.resume-section {
+    background: rgba(17, 36, 27, 0.5);
+    padding: 2rem 0;    
+}
+
+.resume-item {            
+    border: 1px solid #94d1c0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    background: rgba(17, 36, 27, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.resume-content {
+    text-align: left;
+} 
+
+.resume-date {
+    text-align: right;
+    color: #2ce2ae;
+    font-weight: bold;
+} 
+
+// Icon
+
+.fa-li {
+    font-size: 1rem; 
+    margin-right: 1rem;
+}
+
+// Social Media
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px; 
+  
+    li {
+      list-style: none;
+  
+      a {
+        display: inline-block;
+        color: #ffffff;
+        font-size: 3rem; 
+        transition: color 0.3s ease;
+  
+        &:hover {
+          color: #08A689;
+        }
+  
+        i {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  
+

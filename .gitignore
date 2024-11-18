@@ -1,0 +1,40 @@
+# Node.js
+node_modules/
+package-lock.json
+
+# SASS/SCSS Geçici Dosyaları
+*.sass-cache/
+*.scss-cache/
+
+# Derlenmiş CSS Dosyaları
+*.css.map
+*.css
+
+# Derlenmiş JS Dosyaları
+*.js.map
+*.min.js
+
+# Sistem Dosyaları
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE ve Editör Ayar Dosyaları
+.vscode/
+.idea/
+*.swp
+
+# Cache ve Geçici Dosyalar
+*.cache
+*.tmp
+*.bak
+*.log
+*.lock
+
+# OS (İşletim Sistemi) Dosyaları
+*.bak
+*.tmp
+*.swp
+
+# Proje Klasöründeki Local Bağlantılar
+/dist/
