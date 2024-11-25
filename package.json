@@ -3,9 +3,10 @@
     "sass": "^1.80.6"
   },
   "scripts": {
-    "sass": "sass -w scss:css"
+    "sass": "sass -w styles/scss/main.scss:styles/css/main.css"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "git": "^0.1.5"
   }
 }

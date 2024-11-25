@@ -1,6 +1,7 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 $primary-color: #094236;
-
+$github-primary: #21262d;
+$github-secondary: #89929b;
 body {
     background-color: $primary-color;
     font-family: Arial, sans-serif;
@@ -72,7 +73,7 @@ h1 {
 
 //Resume
 .resume-section {
-    background: rgba(17, 36, 27, 0.5);
+    background: linear-gradient(to bottom, rgba(17, 36, 27, 0.5), rgba(49, 160, 108, 0.5));
     padding: 2rem 0;    
 }
 
@@ -135,4 +136,50 @@ h1 {
     }
   }
   
+// Cerf Section
 
+.cerf-section {
+    background: linear-gradient(to bottom,  rgba(17, 36, 27, 0.5), rgba(49, 160, 108, 0.5)); 
+    padding: 2rem 0;    
+}
+
+// Experience Section
+
+.experience-section {
+    background: linear-gradient(to top,  rgba(17, 36, 27, 0.5), rgba(49, 160, 108, 0.5));    
+    padding: 2rem 0;    
+}
+
+// Projects Section
+.projects-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top,  rgba(17, 36, 27, 0.5), rgba(49, 160, 108, 0.5));    
+    color: white;
+  }
+  .projects-section .container{
+    max-width: 1200px;
+    text-align: center;
+  }
+
+  .card {
+    color: black;
+    border-color: $github-secondary;
+    border-radius: 7px;
+    border-width: 5px;
+  }
+  .card a.btn {
+    background-color: $github-secondary;
+    border-width: 0px;
+    border-color: none;
+    
+  }
+  
+  .card a.btn:hover {
+    background-color: $github-primary;
+  }
+  .card:hover{
+    transform: scale(1.11);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
