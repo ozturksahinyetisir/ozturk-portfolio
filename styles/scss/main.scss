@@ -11,7 +11,7 @@ body {
 h1 {
     text-align: center;
     margin-top: 20px;
-    font-family: Oswald, sans-serif; // Sans-serif ekleme sebebimiz Oswald fontunu çekemezsek default olarak sans kullanacaktır.
+    font-family: Oswald, sans-serif;
 }
 
 
@@ -147,20 +147,6 @@ h1 {
   transform:scale(1.2)
 }
 
-// Cerf Section
-
-.cerf-section {
-    background: linear-gradient(to bottom,  rgba(17, 36, 27, 0.5), rgba(49, 160, 108, 0.5)); 
-    padding: 2rem 0;    
-}
-
-// Experience Section
-
-.experience-section {
-    background: linear-gradient(to top,  rgba(17, 36, 27, 0.5), rgba(49, 160, 108, 0.5));    
-    padding: 2rem 0;    
-}
-
 // Projects Section
 .projects-section {
     display: flex;
@@ -195,6 +181,67 @@ h1 {
     transform: scale(1.11);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
+
+  .language-stack {
+    gap: 5px;
+}
+.language-logo {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+.language-logo:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+// Skills Section
+
+.skills-section {
+    background: linear-gradient(to bottom,  rgba(17, 36, 27, 0.5), rgba(49, 160, 108, 0.5)); 
+    padding: 2rem 0;  
+}
+
+.skill-card {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    
+    .skill-logo {
+      width: 80px;
+      height: 80px;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+  
+    &:hover {
+      transform: scale(1.1);
+      .skill-logo {
+        filter: brightness(0.8);
+      }
+    }
+  
+    h4 {
+      font-size: 1.25rem;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  
+    p {
+      font-size: 1rem;
+      color: #bfe4c7;
+    }
+  }
+// Experience Section
+
+.experience-section {
+    background: linear-gradient(to top,  rgba(17, 36, 27, 0.5), rgba(49, 160, 108, 0.5));    
+    padding: 2rem 0;    
+}
+
+// Cerf Section
+
+.cerf-section {
+    background: linear-gradient(to bottom,  rgba(17, 36, 27, 0.5), rgba(49, 160, 108, 0.5)); 
+    padding: 2rem 0;    
+}
 
   // Section indicator
   #section-indicator {
