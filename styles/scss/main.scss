@@ -161,10 +161,14 @@ h1 {
   }
 
   .card {
-    color: black;
-    border-color: $github-secondary;
-    border-radius: 7px;
-    border-width: 5px;
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
   }
   .card a.btn {
     background-color: $github-secondary;
@@ -176,11 +180,14 @@ h1 {
   .card a.btn:hover {
     background-color: $github-primary;
   }
-
-  .card:hover{
-    transform: scale(1.11);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  .project-image {
+    max-height: 400px;
+    object-fit: contain;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
+
+  
 
   .language-stack {
     gap: 5px;
@@ -194,6 +201,7 @@ h1 {
     transform: scale(1.1);
     filter: brightness(1.2);
 }
+
 
 // Skills Section
 
