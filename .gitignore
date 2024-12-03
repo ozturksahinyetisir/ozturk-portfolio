@@ -6,13 +6,8 @@ package-lock.json
 *.sass-cache/
 *.scss-cache/
 
-# Derlenmiş CSS Dosyaları
-*.css.map
-*.css
-
 # Derlenmiş JS Dosyaları
 *.js.map
-*.min.js
 
 # Sistem Dosyaları
 .DS_Store
