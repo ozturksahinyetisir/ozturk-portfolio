@@ -11845,7 +11845,7 @@ textarea.form-control-lg {
   }
 }
 body {
-  background-color: #094236;
+  background-color: #003459;
   font-family: Arial, sans-serif;
   color: white;
 }
@@ -11857,63 +11857,111 @@ h1, .h1 {
 }
 
 .navbar {
-  background-color: #094236;
-  align-items: center;
-  justify-content: center;
-}
-
-.navbar-toggler {
-  margin-right: 1rem;
-}
-
-.navbar-toggler-icon {
-  color: #94d1c0;
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.collapse {
-  display: none;
-}
-.collapse.show {
-  display: flex !important;
-  flex-direction: row;
-  align-items: center;
-}
-
-.navbar-nav {
   display: flex;
-  flex-direction: row;
-  padding-left: 0;
-  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 1px;
+  background-color: #003459;
+  color: white;
 }
 
-.nav-item {
-  margin-left: 1rem;
+.nav-links {
+  display: flex;
+  gap: 35px;
+  font-size: 1.2rem;
   font-family: Oswald, sans-serif;
-  font-size: larger;
+  list-style: none;
 }
 
-.nav-link {
-  color: white !important;
+.nav-links li a {
   text-decoration: none;
-}
-.nav-link:hover {
-  color: #94d1c0 !important;
+  color: white;
 }
 
+.nav-links li a:hover {
+  color: #00A7E1;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 1px 0;
+  transition: 0.3s ease;
+  z-index: 11;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Mobil navbar */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+    background-color: #00A7E1;
+    width: 100%;
+    text-align: center;
+    gap: 5px;
+    padding: 2;
+    z-index: 10;
+  }
+  .nav-links li {
+    padding: 1px;
+  }
+  .nav-links li a {
+    display: block;
+    padding: 1px 0;
+    color: white;
+    text-decoration: none;
+  }
+  .nav-links li a:hover {
+    color: #003459;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .navbar {
+    padding: 10px;
+  }
+}
 .header {
-  background: rgba(17, 36, 27, 0.5);
+  background: #21262d;
   padding: 2rem 0;
   text-align: center;
 }
 
 .resume-section {
-  background: linear-gradient(to bottom, rgba(17, 36, 27, 0.5), rgba(49, 160, 108, 0.5));
+  background: linear-gradient(to top, rgba(0, 23, 31, 0.5), rgba(0, 12, 20, 0.5));
 }
 
 .about-container {
-  background: #094236;
+  background: #003459;
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 3rem;
@@ -11965,13 +12013,13 @@ h1, .h1 {
 .social-media-icons i {
   font-size: 54px;
   margin: 10px;
-  color: #94d1c0;
+  color: #70DBFF;
   display: inline-block;
   transition: color 1s ease;
 }
 
 .social-media-icons i:hover {
-  color: #0ee27f;
+  color: #00A7E1;
   transform: scale(1.2);
 }
 
@@ -11979,7 +12027,7 @@ h1, .h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to top, rgba(17, 36, 27, 0.5), rgba(49, 160, 108, 0.5));
+  background: linear-gradient(to top, rgba(0, 12, 20, 0.5), rgba(0, 23, 31, 0.5));
   color: white;
 }
 
@@ -12032,7 +12080,7 @@ h1, .h1 {
 }
 
 .skills-section {
-  background: linear-gradient(to bottom, rgba(17, 36, 27, 0.5), rgba(49, 160, 108, 0.5));
+  background: linear-gradient(to top, rgba(0, 23, 31, 0.5), rgba(0, 12, 20, 0.5));
   padding: 2rem 0;
 }
 
@@ -12057,16 +12105,16 @@ h1, .h1 {
 }
 .skill-card p {
   font-size: 1rem;
-  color: #bfe4c7;
+  color: #00A7E1;
 }
 
 .experience-section {
-  background: linear-gradient(to top, rgba(17, 36, 27, 0.5), rgba(49, 160, 108, 0.5));
-  padding: 2rem 0;
+  background: linear-gradient(to top, rgba(0, 12, 20, 0.5), rgba(0, 23, 31, 0.5));
+  padding: 5rem 10px;
 }
 
 .cerf-section {
-  background: linear-gradient(to bottom, rgba(17, 36, 27, 0.5), rgba(49, 160, 108, 0.5));
+  background: linear-gradient(to top, rgba(0, 23, 31, 0.5), rgba(0, 12, 20, 0.5));
   padding: 2rem 0;
 }
 
@@ -12076,7 +12124,7 @@ h1, .h1 {
   right: 10px;
   transform: translateY(-50%);
   font-size: 20px;
-  color: #08a689;
+  color: #00A7E1;
   font-weight: bold;
   z-index: 999;
   background: rgba(255, 255, 255, 0.8);

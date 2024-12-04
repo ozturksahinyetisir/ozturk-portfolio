@@ -13,6 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
     sectionIndicator.textContent = currentHash.charAt(0).toUpperCase() + currentHash.slice(1);
 });
 
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+    hamburger.classList.toggle("active");
+  });
+
+
 function updateSectionOnScroll() {
     const sections = document.querySelectorAll("section, footer");
     let currentSection = "Home";
