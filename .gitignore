@@ -21,7 +21,8 @@ Thumbs.db
 
 # CSS MAP
 *.css.map
-*.main.css.map
+styles/css/main.css.map
+
 
 # Cache ve Geçici Dosyalar
 *.cache
